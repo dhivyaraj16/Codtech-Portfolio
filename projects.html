@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <nav class="navbar">
+  <div class="logo">DHIVYA</div>
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('show')">☰</button>
+<button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+</nav>
+
+  </header>
+
+  <main>
+    
+<div id="projects-container" class="projects-grid"></div>
+ 
+<div id="filter-buttons">
+  <button onclick="filterProjects('all')">All</button>
+  <button onclick="filterProjects('web')">Web</button>
+  <button onclick="filterProjects('app')">App</button>
+  <button onclick="filterProjects('java project')">Java Project</button>
+</div>
+
+<div id="projects-container" class="project-grid"></div>
+
+
+</main>
+
+
+  
+  <script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

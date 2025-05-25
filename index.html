@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div data-aos="fade-up">PORTFOLIO</div>
+
+  <header>
+    <h1>DHIVYA R</h1>
+    <p>Full Stack Developer</p>
+   
+      <nav class="navbar">
+ 
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('show')">☰</button>
+  <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+</nav>
+
+      
+  </header>
+<section class="hero">
+  <h1>Hello, I'm Dhivya</h1>
+  <h2><span id="typed"></span></h2>
+</section>
+<section>
+  <h2>Skills</h2>
+  <div class="skill">
+    <p>HTML/CSS/JavaScript</p>
+    <div class="progress"><div class="bar" style="width: 90%"></div></div>
+  <p>Python</p>
+    <div class="progress"><div class="bar" style="width: 70%"></div></div>
+  <p>Data Structures</p>
+    <div class="progress"><div class="bar" style="width: 60%"></div></div>
+  <p>MongoDB/Express/React/Node.JS</p>
+    <div class="progress"><div class="bar" style="width: 75%"></div></div>
+  </div>
+  <!-- Add more skills -->
+</section>
+
+<section class="resume-section">
+  <a href="resume.pdf" download class="resume-btn">📄 Download My Resume</a>
+</section>
+
+  <section>
+    <h2>Welcome!</h2>
+    <p>Click on the navigation links to learn more about me and my work.</p>
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  new Typed("#typed", {
+    strings: ["Full Stack Developer", "Web Designer", "MERN Developer"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+ <script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
